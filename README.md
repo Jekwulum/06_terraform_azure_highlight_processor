@@ -73,11 +73,7 @@ Just like the previous project: [05_azure_highlight_processor](https://github.co
     cd 06_terraform_azure_highlight_processor
   ```
 2. Set the environment variables in the `.env` file as seen in the `.env.example` file
-3. Login to Azure CLI
-  ```shell
-    az login
-  ```
-4. Setup the Python environment
+3. Setup the Python environment
   ```shell
     # windows
     python -m venv venv
@@ -88,10 +84,14 @@ Just like the previous project: [05_azure_highlight_processor](https://github.co
     python3 -m venv venv
     source venv/bin/activate
   ```
-5. Install Project Dependencies
+4. Install Project Dependencies
   ```shell
     pip install --upgrade pip
     pip install -r requirements.txt
+  ```
+5. Login to Azure CLI
+  ```shell
+    az login
   ```
 6. create a service principal for the automation of the terraform
   ```shell
